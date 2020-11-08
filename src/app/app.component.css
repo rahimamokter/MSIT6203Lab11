@@ -1,0 +1,29 @@
+.headerpart {
+    padding-top: 10px;
+    background-color: #00EF00;
+    border-bottom: solid 12px #5DADE4;
+    text-align: left;
+    font-family: "The New Roman";
+    font-size: 18px;
+    color: white;
+    padding-left: 18px;
+    }   
+
+.menupart {
+    text-align: left;
+    height: 50px;
+    background-color:#5DADE5;
+    margin-top: 5px;
+    border-color: white;
+    padding-top: 16px;
+    padding-left: 20px;
+        }
+
+.menupart a {
+  font-family: "The New Roman";
+  color: white ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}

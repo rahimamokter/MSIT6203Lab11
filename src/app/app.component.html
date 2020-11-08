@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta http-equiv="Content-Type" 
+content="text/html; 
+charset=UTF-8;IE=edge"> 
+</head>
+
+<div class="headerpart" >
+<h1 style= "margin-left:20px">Online Tutoring - Utilize your free time</h1>
+</div>
+
+<div class="menupart">
+<b><a href="home.html"> Home </a>  
+  <a href="aboutus.html"> About Us </a>   
+</b></div>
+
+<div>
+    <ul *ngFor ="let student of students let i = index">
+      <li> {{student._id}}<br/> Student Name: {{student.firstName}} {{student.lastName}}<br/>
+            Email: {{student.email}} <br/>Phone Number: {{student.phoneNumber}} <br/>
+            Major: {{student.major}} <br/> Credit Earned: {{student.creditEarned}} <br/>
+            Interest: {{student.interest}}<br/> Self Introduction: {{student.selfIntro}}
+            (index {{i}})
+            <button mat-button color="warn" (click)="onDelete(student._id)">Click to DELETE</button></li>
+    </ul>
+  </div>
+<app-new-student-form></app-new-student-form>
+
+</html>
+      

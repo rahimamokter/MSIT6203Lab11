@@ -1,0 +1,31 @@
+.form-group{
+    padding-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.body{
+    padding-bottom: 20px;
+
+    margin-left: 20px;
+    color: blue;
+
+}
+
+
+.form-control{
+    width: 440px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+    background-color: rgb(220, 233, 223);
+}
+
+.btn-primary{
+    margin-left: 20px;
+    height: 40px;
+    width: 360px;
+    font: bold;
+    font-size: 20px;
+    background-color: #5ADDE2;   
+}

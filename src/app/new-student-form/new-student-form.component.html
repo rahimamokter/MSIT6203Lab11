@@ -1,0 +1,127 @@
+<h3 style="margin-left:20px;">New Student/Tutor sign-up form<br></h3>
+
+<div class= "body">
+  <h3>Please enter your information to sign up.</h3>
+</div> 
+
+<!-- First Name -->
+<form>
+  <div class="form-group">
+    <label for="firstName">First Name <br /></label>
+    <input [(ngModel)]="firstName" 
+    name="firstName" (change)="logName(firstName)" 
+    id="firstName" type="text"
+    placeholder={{firstNameHint}} 
+    class="form-control"/>
+    </div>
+
+    <!-- Last Name -->
+
+  <div class="form-group">
+    <label for="lastName">Last Name <br /></label>
+    <input [(ngModel)]="lastName" 
+    name="lastName" (change)="logName(lastName)" 
+    id="lastName" type="text" 
+    placeholder={{lastNameHint}} 
+    class="form-control" />
+  </div>
+
+<!-- Email -->
+
+<div class="form-group">
+        <label for="email">Email<br /></label>
+        <input
+          [(ngModel)] = "email"
+          name="email"
+          (change)="logName(email)"
+          id="email"
+          type="text"
+          placeholder={{emailHint}}
+          class="form-control"
+        />
+      </div>
+    
+<!-- Contact No. -->
+
+<div class="form-group">
+  <label for="phoneNumber">Phone number<br /></label>
+  <input
+    [(ngModel)] = "phoneNumber"
+    name="phoneNumber"
+    (change)="logName(phoneNumber)"
+    id="phoneNumber"
+    type="text"
+    placeholder={{phoneNumberHint}}
+    class="form-control"
+  />
+</div>
+
+<!-- Major -->
+
+<div class="form-group">
+        <label for="major">Major <br /></label>
+        <input
+          [(ngModel)] = "major"
+          name="major"
+          (change)="logName(major)"
+          id="major"
+          type="text"
+          placeholder={{majorHint}}
+          class="form-control"
+        />
+      </div>
+    
+
+<!-- Credit Earned -->
+
+<div class="form-group">
+  <label for="creditEarned">Credit earned <br /></label>
+  <input
+    [(ngModel)] = "creditEarned"
+    name="creditEarned"
+    (change)="logName(creditEarned)"
+    id="creditEarned"
+    type="text"
+    placeholder={{creditEarnedHint}}
+    class="form-control"
+  />
+</div>
+
+
+<!-- Interest -->
+
+<div class="form-group">
+  <label for="comment">Interest<br /></label>
+  <textarea
+    [(ngModel)] = "interest"
+    name="interest"
+    id="interest"
+    cols="30"
+    rows="5"
+    placeholder={{interestHint}}
+    class="form-control"
+  ></textarea>
+</div>
+
+
+<!-- Self Introduction -->
+
+  <div class="form-group">
+    <label for="comment">Self Introduction<br /></label>
+    <textarea
+      [(ngModel)] = "selfIntro"
+      name="comment"
+      id="comment"
+      cols="30"
+      rows="5"
+      placeholder={{introHint}}
+      class="form-control"
+    ></textarea>
+  </div>
+
+  <!-- <button class="btn btn-primary">Sign Up</button> -->
+  <button 
+  class="btn-primary"
+  (click)="onClick()"><b>Sign Up</b></button>
+
+</form>

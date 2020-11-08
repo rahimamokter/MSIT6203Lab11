@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
+import { MatMenuModule } from  '@angular/material/menu';
+import { MatIconModule} from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -26,8 +28,12 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
     MatInputModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
   ],
+  exports: [MatIconModule, MatButtonModule], // and the exports
+  
   providers: [StudentService],
   bootstrap: [AppComponent]
 })

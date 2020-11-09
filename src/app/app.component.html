@@ -6,14 +6,21 @@
 content="text/html; 
 charset=UTF-8;IE=edge"> 
 </head>
+<!--
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+-->
 
-<app-navigation-menu>
+<app-navigation-menu></app-navigation-menu>
     
-</app-navigation-menu>
+<router-outlet></router-outlet>
 
-<div class="headerpart" >
-<h1 style= "margin-left:20px">Online Tutoring - Utilize your free time</h1>
-</div>
+<!--div>
+  <ul "ngFor = *let student of studentds let i = index">
+<li> {{student._id}}: {{student.firstName}}: {{student.lastName}}
+  <button mat-button color = "warn" (click) = "onDelete(student._id)"Click tp DELETE</button></li>
+</li>
+</ul>
+</div -->
 
 <div class="menupart">
 <b><a href="home.html"> Home </a>  

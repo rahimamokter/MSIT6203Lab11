@@ -6,7 +6,8 @@ import { StudentService } from './student.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent //implements OnInit
+{
   title = 'MSIT6203 Lab10';
 
   //declare variable to hold response and make it public to be accessible from components.html
@@ -14,9 +15,11 @@ public students;
 //initialize the call using StudentService 
 constructor(private _myService: StudentService) { }
 
+/*
 ngOnInit() {
   this.getStudents();
 }
+*/
 //method called OnInit
 getStudents() {
  this._myService.getStudents().subscribe(

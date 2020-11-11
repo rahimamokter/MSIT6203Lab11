@@ -1,14 +1,22 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { StudentService } from '../student.service';  
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-new-student-form',
   templateUrl: './new-student-form.component.html',
   styleUrls: ['./new-student-form.component.css']
 })
 export class NewStudentFormComponent implements OnInit {
-  constructor(private studentService: StudentService){ }
-  ngOnInit(){  }
+  constructor(private studentService: StudentService, private router: Router){ }
+  ngOnInit(){  
+  this.router.navigate(['/addStudent']);
+  }
+
+  onSubmit(){ 
+    console.log("You submitted: " +  this.firstName + " " +  this.lastName + " "+ this.email );
+  this.router.navigate(['/listStudents']);
+
+ }
 
   minCharacterLength: number = 2;
   firstNameHint: string = '*Enter first name'
